@@ -1,4 +1,11 @@
 coverage_service: cobertura_xml
 xcodeproj: ./standard-swift.xcodeproj
 scheme: standard-swift
-output_directory: ./
+source_directory: ./standard-swift
+output_directory: ./report
+#configuration: TestedConfiguration
+#source_directory: path/to/sources/to/include
+#output_directory: path/to/xml_report
+#ignore:
+#  - ExamplePodCode/*
+#  - ProjectTestsGroup/*
