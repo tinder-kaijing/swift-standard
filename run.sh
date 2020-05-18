@@ -18,5 +18,7 @@ fi
 slather coverage -b Build/
 
 # Here is the command to upload xml format report to codecov.io
-# curl -s https://codecov.io/bash  -t {YOUR-TOKEN-HERE}  -J 'standard-swift'
+bash <(curl -s https://codecov.io/bash) -t <UPLOAD_TOKEN> \
+    -J 'standard-swift' -s ./report \
+    || echo 'Codecov failed to upload'
 
